@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_conditional_rendering/conditional.dart';
-
-import '../component.dart';
-import '../cubit/app_cubit.dart';
+import 'package:todo_app2/cubit/app_cubit.dart';
+import '../components.dart';
 import '../cubit/states.dart';
 
 class NewTasksScreen extends StatelessWidget {

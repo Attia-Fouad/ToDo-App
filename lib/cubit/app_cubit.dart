@@ -1,20 +1,20 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:todo_app2/cubit/states.dart';
-
-import '../screens/archived_tasks_screen.dart';
-import '../screens/done_tasks_screen.dart';
-import '../screens/new_tasks_screen.dart';
+import 'package:todo_app2/screens/archived_tasks_screen.dart';
+import 'package:todo_app2/screens/done_tasks_screen.dart';
+import 'package:todo_app2/screens/new_tasks_screen.dart';
 
 class AppCubit extends Cubit<AppStates> {
   AppCubit() : super(AppInitialState());
   static AppCubit get(context) => BlocProvider.of(context);
   int currentIndex = 0;
   List<Widget> screens = [
-    NewTasksScreen(),
-    DoneTasksScreen(),
-    ArchivedTasksScreen(),
+    const NewTasksScreen(),
+    const DoneTasksScreen(),
+    const ArchivedTasksScreen(),
   ];
   List<String> title = ['New Tasks', 'Done Tasks', 'Archived Tasks'];
   void changeIndex(int index) {

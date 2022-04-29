@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../component.dart';
+import '../components.dart';
 import '../cubit/app_cubit.dart';
 import '../cubit/states.dart';
 

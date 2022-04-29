@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
+import 'package:todo_app2/components.dart';
 
 import 'cubit/app_cubit.dart';
 import 'cubit/states.dart';
@@ -45,6 +46,8 @@ class HomeLayout extends StatelessWidget {
                     titleController.text = '';
                     timeController.text = '';
                     dateController.text = '';
+                    showToast(text: 'Task Added', state: ToastStates.SUCCESS);
+
                   }
                 } else {
                   scaffoldKey.currentState!

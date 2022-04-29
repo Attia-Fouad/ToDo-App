@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:todo_app2/home_layout_screen.dart';
 
 import 'bloc_observer.dart';
-
 void main() {
   Bloc.observer = MyBlocObserver();
   runApp( const MyApp());
